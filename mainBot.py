@@ -2,7 +2,7 @@ import telebot
 from telebot import types
 import requests
 from bs4 import BeautifulSoup
-import time
+
 
 bot = telebot.TeleBot('1221914555:AAFucB7ThJuWFV3LDw37LCAaQZIdA9pQySc')
 
@@ -25,7 +25,6 @@ def start(message):
     help_message = f'<strong>ВАЖЛИВО!!!</strong>\n<i>Всього є три кнопки, кожна з яких показує поточний курс тої чи іншої валюти.\nОднак, у цьому боті також присутній калькулятор, який переводить <strong><u>ВВЕДЕНУ ВАМИ</u></strong> валюту у гривні.\n Для того, щоб перевести потрівно ввести кілкість цифрами і через пробіл валюту("usd" або "euro" або "rub").\nНаприкла "156 usd"</i>\n <b>Ви можете викликати це повідомлення ввівши команду /help</b>'
 
     bot.send_message(message.chat.id, start_message, parse_mode='html', reply_markup=markup)
-    time.sleep(2)
     bot.send_message(message.chat.id, help_message, parse_mode='html')
 
 @bot.message_handler(commands=['help'])
