@@ -1,1 +1,1 @@
-worker: python mainBot.py $PATH
+worker: python mainBot.py
