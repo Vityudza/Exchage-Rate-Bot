@@ -4,7 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 
 
-bot = telebot.TeleBot('1162590973:AAG0uFuxfKXZE6WnO-_XKziTGQ6bna_R6rs')
+bot = telebot.TeleBot('1221914555:AAFQ4yhFyRWYFdU4-FQCo3SkGX9XOWI7LmI')
 
 DOLLAR_UAH = 'https://www.google.com.ua/search?client=opera&q=долар+в+гривні&sourceid=opera&ie=UTF-8&oe=UTF-8'
 EUR_UAH = 'https://www.google.com.ua/search?client=opera&hs=f3T&sxsrf=ALeKk03nhZV5Py-YdWsOUUqRCkIjDs9Vsw%3A1588002636620&ei=TP-mXvqvJa6rrgS5t5rgDw&q=євро+в+гривні&oq=євро+в+гривні&gs_lcp=CgZwc3ktYWIQAzIKCAAQxAIQRhCCAjICCAAyBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeOgQIABBHOgQIABBDOgQIABAKOgkIIxAnEEYQggI6BQgAEMsBOgcIIxDqAhAnOgUIABCDAToJCAAQQxBGEIICOgcIABBGEIICUOHZvgFYy7O_AWDeub8BaAFwAngDgAF4iAHyEpIBBDIxLjWYAQCgAQGqAQdnd3Mtd2l6sAEK&sclient=psy-ab&ved=0ahUKEwj6hbvo-ojpAhWulYsKHbmbBvwQ4dUDCAs&uact=5'
