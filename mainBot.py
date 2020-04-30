@@ -65,26 +65,26 @@ def Main(message):
     base = get_message_from_user.split(' ')
 
     if base[0] == 'долар':
-        Rate(message, DOLLAR_UAH, 'долар', 'гривень')
+        Rate(message, DOLLAR_UAH, 'USD', 'UAH')
     elif base[0] == 'євро':
-        Rate(message, EUR_UAH, 'євро', 'гривень')
+        Rate(message, EUR_UAH, 'EUR', 'UAH')
     elif base[0] == 'рублі':
-        Rate(message, RUB_UAH, 'російський рубль', 'гривень')
+        Rate(message, RUB_UAH, 'RUB', 'UAh')
     elif base[0] == '$->€':
-        Rate(message, DOLLAR_EUR, 'USD', 'євро')
+        Rate(message, DOLLAR_EUR, 'USD', 'EUR')
     elif base[0] == '€->$':
-        Rate(message, EUR_DOLLAR, 'EUR', 'доларів')
+        Rate(message, EUR_DOLLAR, 'EUR', 'USD')
     elif base[0].isdigit() and base[1] == 'usd':
         print(type(base))
-        Calc(message, base, DOLLAR_UAH, 'доларів', 'гривень')
+        Calc(message, base, DOLLAR_UAH, 'USD', 'UAH')
     elif base[0].isdigit() and base[1] == 'eur':
-        Calc(message, base, EUR_UAH, 'євро', 'гривень')
+        Calc(message, base, EUR_UAH, 'EUR', 'UAH')
     elif base[0].isdigit() and base[1] == 'rub':
-        Calc(message, base, RUB_UAH, ' рублів', 'гривень')
+        Calc(message, base, RUB_UAH, 'RUB', 'UAH')
     elif base[0].isdigit() and base[1] == 'u_e':
-        Calc(message, base, DOLLAR_EUR, 'доларів', 'євро')
+        Calc(message, base, DOLLAR_EUR, 'USD', 'EUR')
     elif base[0].isdigit() and base[1] == 'e_u':
-        Calc(message, base, EUR_DOLLAR, 'євро ', 'доларів')
+        Calc(message, base, EUR_DOLLAR, 'EUR', 'USD')
     else:
         bot.send_message(message.chat.id, 'Дані введено не вірно скористайтеся командою <u>/help</u>', parse_mode='html')
 
